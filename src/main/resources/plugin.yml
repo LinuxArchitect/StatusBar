@@ -1,0 +1,9 @@
+name: StatusBar
+version: ${project.version}
+main: me.cowprotector.statusbar.StatusBar
+api-version: 1.16
+prefix: StatusBar
+authors: [ LinuxArchitect ]
+description: Display game status in Boss Bar, e.g. for screenshot
+commands:
+  statusbar:
