@@ -6,6 +6,7 @@ import org.bukkit.World;
 import org.bukkit.entity.Player;
 
 import java.util.List;
+import java.util.Locale;
 
 import static me.cowprotector.util.Util.getCardinalDirection;
 import static me.cowprotector.util.Util.getLocation;
@@ -20,7 +21,7 @@ public class StatusBarCommand extends PluginCommand {
 
         World w = p.getWorld();
         String name = p.getName();
-        String biome = p.getLocation().getBlock().getBiome().toString();
+        String biome = p.getLocation().getBlock().getBiome().toString().toLowerCase(Locale.ROOT);
         String direction = getCardinalDirection(p);
         String location = getLocation(p);
 
